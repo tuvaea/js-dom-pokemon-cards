@@ -25,6 +25,19 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+  font-size: medium;
+}
+
+p {
+  font-size: small;
+}
+
+ul {
+  list-style: none;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, 375px);
@@ -53,15 +66,77 @@ h2 {
 }
 
 .card--text {
-  margin: 0.2rem;
-  padding: 1rem;
+  padding: 0.5rem;
+  font-family: 'Verdana', sans-serif;
+  text-align: left;
+  color: #000000;
+}
 
-  border-radius: 5px;
+/* Individual stat items */
+.card--text li {
+  line-height: 1.6;
+  font-weight:530; /* Space between lines */
+  color: #000000; /* Darker color for readability */
+  text-transform: uppercase; /* Capitalized stat names */
+}
+
+
+.card--title {
+  font-weight: 800;
+  font-size: x-large;
+  font: bolder;
 }
 
 .card--img {
   display: block;
   margin: 0 auto;
+  align-self: center;
 
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  max-width: 100%; /* Ensures responsiveness */
+}
+
+/* Ensures that the image inside the button is centered */
+.card--button {
+  display: block;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.card--button img {
+  display: block;
+  margin: 0 auto;
+  align-self: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  max-width: 100%;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: none;
+  background-color: transparent;
+  cursor: pointer;
+  align-self: center; */
+} 
+
+button img {
+  display: flex;
+  margin: 0 auto;
+  align-self: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  max-width: 100%; /* Ensures responsiveness */
+}
+
+.version {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 25px);
+  gap: 15px;
+  justify-content: center;
+  justify-items: center;
+
+  padding: 2rem 0;
+  margin-bottom: 2rem;
 }
